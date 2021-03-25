@@ -102,12 +102,19 @@ html, body {
     transition: all 0.2s ease 0s;
     align-items: flex-start;
     justify-content: flex-start;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .wrapper .container .active {
     display: flex;
 }
 .wrapper .container .history p{
+    overflow: hidden;
     font-size: 1.2em;
-    padding: 0.8em 0.5em;
+    margin: 0.6em 0.5em;
+    line-height: 1.2em;
 }
+.wrapper .container .history p br{
+    font-size: 0.01em;
+}
+

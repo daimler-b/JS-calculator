@@ -104,9 +104,9 @@ function replaceSign(){
     document.getElementById("result").value = result;
     
     if(str != result){
-        str = str + "=" + result;
+        str = str + " =" + result;
         createString(str);
-        createString("</br>"); 
+        createString("</br>");
     }
 
 }
@@ -118,25 +118,25 @@ document.getElementById("hist").onclick = showHistory;
 document.getElementById("clear_all").onclick = clearScreenAll;
 document.getElementById("clear_elem").onclick = back;
 
-document.getElementById("degree").onclick = function() { addValue("^"); }
+document.getElementById("degree").onclick = function() { addValue(" ^ "); }
 document.getElementById("root").onclick = getSquare;
-document.getElementById("precent").onclick = function() { addValue("%"); }
-document.getElementById("division").onclick = function() { addValue("/"); }
+document.getElementById("precent").onclick = function() { addValue(" % "); }
+document.getElementById("division").onclick = function() { addValue(" / "); }
 
 document.getElementById("seven").onclick = function() { addValue("7"); }
 document.getElementById("eight").onclick = function() { addValue("8"); }
 document.getElementById("nine").onclick = function() { addValue("9"); }
-document.getElementById("multip").onclick = function() { addValue("*"); }
+document.getElementById("multip").onclick = function() { addValue(" * "); }
 
 document.getElementById("four").onclick = function() { addValue("4"); }
 document.getElementById("five").onclick = function() { addValue("5"); }
 document.getElementById("six").onclick = function() { addValue("6"); }
-document.getElementById("subtrac").onclick = function() { addValue("-"); }
+document.getElementById("subtrac").onclick = function() { addValue(" - "); }
 
 document.getElementById("one").onclick = function() { addValue("1"); }
 document.getElementById("two").onclick = function() { addValue("2"); }
 document.getElementById("three").onclick = function() { addValue("3"); }
-document.getElementById("addit").onclick = function() { addValue("+"); }
+document.getElementById("addit").onclick = function() { addValue(" + "); }
 
 document.getElementById("sign").onclick = replaceSign;
 document.getElementById("zero").onclick = function() { addValue("0"); }
