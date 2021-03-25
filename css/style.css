@@ -57,7 +57,7 @@ html, body {
 }
 .container input[type = "button"]:active{
     color: rgb(0, 0, 255);
-    box-shadow: 0 0 0.3em blue;
+    box-shadow: 0 0 0.5em blue;
 }
 .container > div input[type = "button"]:last-child{
     font-size: 2.5em;
@@ -65,27 +65,30 @@ html, body {
     font-weight: 400;
 }
 .container input.hist{
-    background: url(../img/icon_log1.png) center center no-repeat;
+    background: url(../img/icon_log1.jpg) center center no-repeat;
+    background-position: center top;
     background-size: 100%;
 }
 .container input.hist:active{
-    background: url(../img/icon_log1_act.png) center center no-repeat;
     background-size: 100%;
+    background-position: center bottom;
 }
 .container input.clear_elem{
-    background: url(../img/icon_backsp.png) center center no-repeat;
+    background: url(../img/icon_backsp.jpg) center center no-repeat;
+    background-position: center top;
     background-size: 100%;
 }
 .container input.clear_elem:active{
-    background: url(../img/icon_backsp_act.png) center center no-repeat;
+    background-position: center bottom;
     background-size: 100%;
 }
 .container input.degree{
-    background: url(../img/icon_xsty.png) center center no-repeat;
+    background: url(../img/icon_xsty.jpg) center center no-repeat;
+    background-position: center top;
     background-size: 100%;
 }
 .container input.degree:active{
-    background: url(../img/icon_xsty_act.png) center center no-repeat;
+    background-position: center bottom;
     background-size: 100%;
 }
 
