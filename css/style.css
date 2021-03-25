@@ -17,8 +17,8 @@ html, body {
     background: rgb(126, 133, 197);
 }
 .container {
-    height: 400px;
-    width: 250px;
+    height: 480px;
+    width: 300px;
     padding: 0.3em;
     background-color: rgb(42, 42, 47);
     border-radius: 0.5em;
@@ -95,7 +95,7 @@ html, body {
 .wrapper .container .history{
     display: flex;
     height: 0;
-    width: 88%;
+    width: 88.5%;
     position: absolute;
     top: 0;
     background: #fff;
@@ -106,7 +106,7 @@ html, body {
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: auto;
-    margin-top: 8.4em;
+    margin-top: 10em;
 }
 .wrapper .container .active {
     display: flex;
