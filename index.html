@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="text-row">
+                <input type="text" name="" id="result" class="result" value = "" placeholder="0" readonly>
+            </div>
+            <div class="first-row">
+                <input type="button" value="" id="hist" class="hist">
+                <input type="button" value="C" id="clear_all">
+                <input type="button" value="" id="clear_elem" class="clear_elem">
+            </div>
+            <div class="two-row">
+                <input type="button" value="" id="degree" class="degree">
+                <input type="button" value="&#8730" id="root" class="root">
+                <input type="button" value="%" id="precent">
+                <input type="button" value="&divide;" id="division">
+            </div>
+            <div class="three-row">
+                <input type="button" value="7" id="seven">
+                <input type="button" value="8" id="eight">
+                <input type="button" value="9" id="nine">
+                <input type="button" value="&times;" id="multip">
+            </div>
+            <div class="four-row">
+                <input type="button" value="4" id="four">
+                <input type="button" value="5" id="five">
+                <input type="button" value="6" id="six">
+                <input type="button" value="-" id="subtrac">
+            </div>
+            <div class="five-row">
+                <input type="button" value="1" id="one">
+                <input type="button" value="2" id="two">
+                <input type="button" value="3" id="three">
+                <input type="button" value="+" id="addit">
+            </div>
+            <div class="six-row">
+                <input type="button" value="+/-" id="sign">
+                <input type="button" value="0" id="zero">
+                <input type="button" value="," id="dot">
+                <input type="button" value="=" id="equal">
+            </div>
+            <div class="history" id="wind_hist">
+                <p id="paragr"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
