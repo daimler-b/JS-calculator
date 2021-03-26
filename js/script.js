@@ -18,9 +18,17 @@ function createString(elem){
     document.getElementById("paragr").innerHTML += elem;
 }
 
-// Показать историю
+// Показать журнал
 function showHistory(){
-    document.getElementById("wind_hist").classList.toggle("active");
+    document.getElementById('clear_all').classList.toggle('active'); 
+    document.getElementById('clear_elem').classList.toggle('active');
+    document.getElementById('clear_log').classList.toggle('active');
+    document.getElementById('wind_hist').classList.toggle('active');
+}
+
+// Очистить журнал 
+function clearLog(){
+    document.getElementById("paragr").innerHTML = "";
 }
 
 // Удаление всех элементов
@@ -117,6 +125,7 @@ function replaceSign(){
 document.getElementById("hist").onclick = showHistory;
 document.getElementById("clear_all").onclick = clearScreenAll;
 document.getElementById("clear_elem").onclick = back;
+document.getElementById("clear_log").onclick = clearLog;
 
 document.getElementById("degree").onclick = function() { addValue(" ^ "); }
 document.getElementById("root").onclick = getSquare;

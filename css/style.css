@@ -39,6 +39,9 @@ html, body {
 .text-row{
     padding-bottom: 0.5em;
 }
+.container input:focus{
+    outline: none;
+}
 .container .text-row input[type = "text"]{
     text-align: right;
     padding: 0 0.75em;
@@ -57,13 +60,15 @@ html, body {
 }
 .container input[type = "button"]:active{
     color: rgb(0, 0, 255);
-    box-shadow: 0 0 0.5em blue;
+    box-shadow: 0 0 0.4em blue;
 }
 .container > div input[type = "button"]:last-child{
     font-size: 2.5em;
     line-height: 0.1em;
     font-weight: 400;
 }
+
+
 .container input.hist{
     background: url(../img/icon_log1.jpg) center center no-repeat;
     background-position: center top;
@@ -73,25 +78,6 @@ html, body {
     background-size: 100%;
     background-position: center bottom;
 }
-.container input.clear_elem{
-    background: url(../img/icon_backsp.jpg) center center no-repeat;
-    background-position: center top;
-    background-size: 100%;
-}
-.container input.clear_elem:active{
-    background-position: center bottom;
-    background-size: 100%;
-}
-.container input.degree{
-    background: url(../img/icon_xsty.jpg) center center no-repeat;
-    background-position: center top;
-    background-size: 100%;
-}
-.container input.degree:active{
-    background-position: center bottom;
-    background-size: 100%;
-}
-
 .wrapper .container .history{
     display: flex;
     height: 0;
@@ -106,11 +92,11 @@ html, body {
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: auto;
-    margin-top: 10em;
+    margin-top: 9.9em;
 }
-.wrapper .container .active {
+.wrapper .container .history.active {
     display: flex;
-    height: 61.8%;
+    height: 62.2%;
 }
 .wrapper .container .history p{
     overflow: hidden;
@@ -118,4 +104,38 @@ html, body {
     margin: 0.6em 0.5em;
     line-height: 1.3em;
 }
+.container input.clear_elem{
+    background: url(../img/icon_backsp.jpg) center center no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+.container input.clear_elem:active{
+    background-position: center bottom;
+    background-size: 100%;
+}
+.wrapper .container .first-row input.clear_log{
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 6em;
+}
+.container input.clear_elem.active, input.clear_all.active, input.clear_log{
+    display: none;
+}
+.container input.clear_log.active{
+    display: block;
+}
+
+
+.container input.degree{
+    background: url(../img/icon_xsty.jpg) center center no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+.container input.degree:active{
+    background-position: center bottom;
+    background-size: 100%;
+}
+
+
 
